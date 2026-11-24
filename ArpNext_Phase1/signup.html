@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create account — ArpNext</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="src/css/style.css">
+    <script type="module" src="src/js/signup.js"></script>
+</head>
+
+<body class="auth-page"><a class="auth-brand brand" href="index.html"><img class="brand-logo"
+            src="assets/arpnext-logo.svg" alt="ArpNext logo" data-brand-logo><span data-brand-name>Arp<span
+                class="brand-accent">Next</span></span></a>
+    <main class="auth-wrap">
+        <div class="auth-card"><span class="section-kicker">GET STARTED</span>
+            <h1>Create your account.</h1>
+            <p class="section-description">A few details to begin your learning journey.</p>
+            <form class="auth-form" id="signupForm"><label>Full name<input id="fullName" type="text" autocomplete="name"
+                        placeholder="Your name" required maxlength="80"></label><label>Email address<input id="email"
+                        type="email" autocomplete="email" placeholder="you@example.com"
+                        required></label><label>Password<input id="password" type="password" autocomplete="new-password"
+                        placeholder="At least 6 characters" required minlength="6"></label><button
+                    class="button button-full" id="signupButton" type="submit">Create account <span>→</span></button>
+                <p class="form-message" id="formMessage" aria-live="polite"></p>
+            </form>
+            <p class="auth-switch">Already have an account? <a href="login.html">Log in</a></p>
+            <p class="auth-footnote">By creating an account, you agree to use ArpNext responsibly.</p>
+        </div>
+    </main>
+</body>
+
+</html>

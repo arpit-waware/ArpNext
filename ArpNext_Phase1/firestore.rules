@@ -1,0 +1,31 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // A signed-in student can create/read their own profile only.
+    // Role and accountStatus are deliberately immutable from the client.
+    match /users/{userId} {
+      allow create: if request.auth != null
+        && request.auth.uid == userId
+        && request.resource.data.uid == userId
+        && request.resource.data.role == 'student'
+        && request.resource.data.accountStatus == 'active'
+        && request.resource.data.keys().hasOnly(['uid', 'fullName', 'email', 'role', 'accountStatus', 'createdAt']);
+      allow read: if request.auth != null && request.auth.uid == userId;
+      allow update: if request.auth != null
+        && request.auth.uid == userId
+        && request.resource.data.diff(resource.data).affectedKeys().hasOnly(['fullName']);
+      allow delete: if false;
+    }
+
+    // Public website branding and published notices can be read by visitors.
+    // Only trusted admins/backend should be allowed to write this document.
+    match /siteContent/{documentId} {
+      allow get: if documentId == 'public';
+      allow list: if false;
+      allow write: if false;
+    }
+
+    // No public writes or reads are enabled for other collections yet.
+    // Add collection-specific rules as each feature is implemented.
+  }
+}

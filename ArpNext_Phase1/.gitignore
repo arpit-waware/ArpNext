@@ -1,0 +1,5 @@
+# Local Firebase web configuration
+src/js/firebase-config.js
+# Dependencies and local files
+node_modules/
+.DS_Store

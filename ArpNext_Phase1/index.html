@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Learn practical skills with ArpNext. Explore courses and build your future.">
+  <title>ArpNext — Learn Today. Build Tomorrow.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="src/css/style.css">
+  <script type="module" src="src/js/app.js"></script>
+  <script type="module" src="src/js/site-content.js"></script>
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html"><img class="brand-logo" src="assets/arpnext-logo.svg" alt="ArpNext logo"
+          data-brand-logo><span data-brand-name>Arp<span class="brand-accent">Next</span></span></a>
+      <button class="menu-toggle" aria-label="Toggle navigation"
+        aria-expanded="false"><span></span><span></span><span></span><span></span></button>
+      <nav class="main-nav">
+        <a class="active" href="index.html">Home</a>
+        <a href="courses.html">Explore courses</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact Us</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle"
+        type="button" aria-label="Switch to dark mode"
+        title="Toggle dark mode">
+    🌙
+</button>
+        <a class="nav-login" href="login.html" id="loginLink">Log in</a>
+
+        <a class="button button-small" href="signup.html" id="signupLink">
+          Get started <span>↗</span>
+        </a>
+
+        <a class="nav-login" href="student/dashboard.html" id="dashboardLink" style="display: none;">
+          Dashboard
+        </a>
+
+        <button class="button button-small" id="logoutButton" style="display: none;">
+          Logout
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <main>
+    <section class="hero-section">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <div class="eyebrow"><span class="eyebrow-dot"></span> A better way to learn</div>
+          <h1>Make your next<br><span>skill your strength.</span></h1>
+          <p class="hero-description">Explore practical courses, learn from passionate instructors and take the next
+            step towards your future.</p>
+          <div class="hero-actions">
+            <a class="button" href="courses.html">Explore courses <span>↗</span></a>
+            <a class="text-link" href="about.html">Discover ArpNext <span>→</span></a>
+          </div>
+          <div class="hero-note"><span class="note-icon">✦</span> Learn at your pace. Grow on your terms.</div>
+        </div>
+        <div class="hero-visual">
+          <div class="visual-orbit orbit-one"></div>
+          <div class="visual-orbit orbit-two"></div>
+          <div class="learning-card">
+            <div class="learning-card-top"><span class="mini-label">YOUR NEXT CHAPTER</span><span
+                class="live-dot"></span></div>
+            <div class="learning-symbol">A<span>+</span></div>
+            <h3>Small steps.<br>Big possibilities.</h3>
+            <p>Build knowledge that moves you forward.</p>
+            <div class="learning-card-bottom"><span>LEARN · PRACTISE · GROW</span><span>↗</span></div>
+          </div>
+          <div class="floating-chip chip-top"><span class="chip-icon">✦</span> Learn something new</div>
+          <div class="floating-chip chip-bottom"><span class="chip-check">✓</span> Your journey starts here</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="search-band">
+      <div class="container search-panel">
+        <div><span class="search-kicker">FIND YOUR NEXT COURSE</span>
+          <h2>What would you like to learn?</h2>
+        </div>
+        <form class="course-search" action="courses.html" method="get">
+          <span class="search-icon">⌕</span>
+          <input name="q" type="search" placeholder="Search skills, topics or courses..." aria-label="Search courses">
+          <button class="button" type="submit">Search <span>→</span></button>
+        </form>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-heading">
+          <div><span class="section-kicker">EXPLORE YOUR INTERESTS</span>
+            <h2>Learn what moves you.</h2>
+          </div><a class="text-link" href="courses.html">View all courses <span>→</span></a>
+        </div>
+        <div class="category-grid">
+          <a class="category-card" href="courses.html?category=development"><span
+              class="category-icon icon-lavender">&lt;/&gt;</span><span><strong>Development</strong><small>Build digital
+                skills</small></span><span class="card-arrow">↗</span></a>
+          <a class="category-card" href="courses.html?category=design"><span
+              class="category-icon icon-peach">✳</span><span><strong>Design</strong><small>Bring ideas to
+                life</small></span><span class="card-arrow">↗</span></a>
+          <a class="category-card" href="courses.html?category=business"><span
+              class="category-icon icon-blue">▤</span><span><strong>Business</strong><small>Think and
+                lead</small></span><span class="card-arrow">↗</span></a>
+          <a class="category-card" href="courses.html?category=technology"><span
+              class="category-icon icon-green">⌘</span><span><strong>Technology</strong><small>Understand what's
+                next</small></span><span class="card-arrow">↗</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-soft">
+      <div class="container">
+        <div class="section-heading">
+          <div><span class="section-kicker">START LEARNING</span>
+            <h2>Find a course for your goals.</h2>
+            <p class="section-description">Explore the catalogue and choose a subject you’re excited to learn.</p>
+          </div><a class="text-link" href="courses.html">Explore catalogue <span>→</span></a>
+        </div>
+        <div class="course-grid" id="featured-courses">
+          <article class="course-card course-placeholder">
+            <div class="course-art art-purple"><span>01</span><b>Build<br>something<br>great.</b></div>
+            <div class="course-info"><span class="course-category">DEVELOPMENT</span>
+              <h3>Web Development</h3>
+              <p>Learn the foundations of building for the web.</p>
+              <div class="course-meta"><span>Explore topic</span><span>↗</span></div>
+            </div>
+          </article>
+          <article class="course-card course-placeholder">
+            <div class="course-art art-orange"><span>02</span><b>Think<br>in visual<br>stories.</b></div>
+            <div class="course-info"><span class="course-category">DESIGN</span>
+              <h3>UI/UX Design</h3>
+              <p>Turn thoughtful ideas into useful experiences.</p>
+              <div class="course-meta"><span>Explore topic</span><span>↗</span></div>
+            </div>
+          </article>
+          <article class="course-card course-placeholder">
+            <div class="course-art art-blue"><span>03</span><b>Make data<br>make sense.</b></div>
+            <div class="course-info"><span class="course-category">TECHNOLOGY</span>
+              <h3>Data Fundamentals</h3>
+              <p>Build confidence with data and analysis.</p>
+              <div class="course-meta"><span>Explore topic</span><span>↗</span></div>
+            </div>
+          </article>
+        </div>
+        <p class="data-note">Course catalogue preview · Live course listings will appear here after Firebase is
+          connected.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container value-grid">
+        <div class="value-copy"><span class="section-kicker">WHY ARPNEXT</span>
+          <h2>Learning should move you forward.</h2>
+          <p class="section-description">A focused place to discover useful knowledge, practise new skills and keep
+            making progress.</p><a class="button" href="about.html">Our approach <span>↗</span></a>
+        </div>
+        <div class="value-list">
+          <div class="value-item"><span class="value-number">01</span>
+            <div>
+              <h3>Learn with purpose</h3>
+              <p>Explore subjects and courses that connect with your goals.</p>
+            </div>
+          </div>
+          <div class="value-item"><span class="value-number">02</span>
+            <div>
+              <h3>Go at your pace</h3>
+              <p>Build your learning routine around your schedule.</p>
+            </div>
+          </div>
+          <div class="value-item"><span class="value-number">03</span>
+            <div>
+              <h3>Keep growing</h3>
+              <p>Turn what you learn into skills you can use.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="instructor-cta">
+      <div class="container instructor-inner">
+        <div><span class="section-kicker light-kicker">SHARE WHAT YOU KNOW</span>
+          <h2>Have knowledge worth sharing?</h2>
+          <p>Help learners grow by becoming an ArpNext instructor.</p>
+        </div><a class="button button-light" href="instructor.html">Become an instructor <span>↗</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-main">
+      <div><a class="brand footer-brand" href="index.html"><img class="brand-logo" src="assets/arpnext-logo.svg"
+            alt="ArpNext logo" data-brand-logo><span data-brand-name>Arp<span
+              class="brand-accent">Next</span></span></a>
+        <p>Learn Today. Build Tomorrow.</p>
+      </div>
+      <div class="footer-links">
+        <div><strong>Explore</strong><a href="courses.html">Courses</a><a href="about.html">About us</a></div>
+        <div><strong>Get started</strong><a href="login.html">Log in</a><a href="signup.html">Create account</a></div>
+        <div><strong>Information</strong><a href="contact.html">Contact</a><a href="privacy.html">Privacy</a><a
+            href="terms.html">Terms</a></div>
+      </div>
+    </div>
+    <div class="container footer-bottom"><span>© <span id="year"></span> ArpNext. All rights reserved.</span><span>Learn
+        Today. Build Tomorrow.</span></div>
+  </footer>
+</body>
+
+</html>
